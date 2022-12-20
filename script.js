@@ -136,9 +136,9 @@ class Entity {
 	static load() {
 		Entity.entities = [
 			// Georgiana
-			new Entity(loadImage("entities/georginia_reed.png"), 180, 230, 40, 80),
+			new Entity(loadImage("entities/georginia.png"), 180, 230, 40, 80),
 			// Eliza
-			new Entity(loadImage("entities/eliza_reed.png"), 235, 230, 40, 80),
+			new Entity(loadImage("entities/eliza.png"), 235, 230, 40, 80),
 			// Mrs. Reed
 			new Entity(loadImage("entities/mrsreed.png"), 220, 400, 40, 80, () => new Dialogue([
 				{ source: Entity.entities[2], dialogue: "Go to your room!" },
@@ -171,7 +171,7 @@ class Entity {
 			// Rochester
 			new Entity(loadImage("entities/rochester.png"), 270, 910, 40, 80),
 			// Blanche
-			new Entity(loadImage("entities/blanche_ingram.png"), 450, 985, 40, 80, () => new Dialogue([
+			new Entity(loadImage("entities/blanche.png"), 450, 985, 40, 80, () => new Dialogue([
 				{ source: Entity.entities[8], dialogue: "Why, I suppose you have a governess for her: I saw a person with her just now – is she gone?" },
 				{ source: Entity.entities[8], dialogue: "Oh, no! there she is still behind the window-curtain." },
 				{ source: Entity.entities[8], dialogue: "You pay her, of course: I should think it quite as expensive, – more so; for you have them both to keep in addition…" },
