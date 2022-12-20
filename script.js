@@ -59,7 +59,6 @@ class Room {
 			loadImage("rooms/room4.png"),
 			loadImage("rooms/room5.png"),
 			loadImage("rooms/room6.png"),
-			loadImage("rooms/room7.png"),
 		];
 		for (let i = 0; i < images.length; i++) {
 			const x = i % COLUMNS, y = Math.floor(i / COLUMNS);
@@ -182,7 +181,7 @@ class Entity {
 				{ source: Entity.entities[9], dialogue: "Mr. Briggs: STOP. this wedding at once. For you are already wedded to another woman!" },
 			])),
 			// Rochester
-			new Entity(loadImage("entities/rochester.png"), 310, 1695, 40, 80, () => new Dialogue([
+			new Entity(loadImage("entities/rochester.png"), 985, 820, 40, 80, () => new Dialogue([
 				{ source: Entity.entities[10], dialogue: "Rochester: That is my wife," },
 				{ source: Entity.entities[10], dialogue: "Rochester: Such is the sole conjugal embrace I am ever to know – such are the endearments which are to solace my leisure hours!" },
 				{ source: Entity.entities[10], dialogue: "Rochester: And this is what I wished to have" },
@@ -191,7 +190,7 @@ class Entity {
 				{ source: Entity.entities[10], dialogue: "Rochester: then judge me, priest of the Gospel and man of the law, and remember, with what judgment ye judge ye shall be judged!" },
 			])),
 			// St. John
-			new Entity(loadImage("entities/stjohn.png"), 985, 820, 40, 80, () => new Dialogue([
+			new Entity(loadImage("entities/stjohn.png"), 310, 1695, 40, 80, () => new Dialogue([
 				{ source: Entity.entities[11], dialogue: "St. John: God and nature intended you for a missionary’s wife." },
 				{ source: Entity.entities[11], dialogue: "St. John: It is not personal but mental endowments they have given you; you are formed for labor, not love." },
 				{ source: Entity.entities[11], dialogue: "St. John: A missionary’s wife you must—shall be." },
