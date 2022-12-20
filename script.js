@@ -307,7 +307,7 @@ addEventListener("keyup", e => {
 
 function preload() {
 	font = loadFont("fonts/pixel1.otf");
-	player = new Entity(loadImage("entities/player1.png"), 295, 335, 40, 80);
+	player = new Entity(loadImage("entities/jane.png"), 295, 335, 40, 80);
 	world = new World(player);
 	Room.load();
 	Entity.load();
