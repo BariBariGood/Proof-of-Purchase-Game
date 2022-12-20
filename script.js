@@ -132,7 +132,6 @@ class Entity {
 			player.interaction = entity.event();
 		})
 	}
-
 	static load() {
 		Entity.entities = [
 			// Georgiana
@@ -141,60 +140,62 @@ class Entity {
 			new Entity(loadImage("entities/eliza.png"), 235, 230, 40, 80),
 			// Mrs. Reed
 			new Entity(loadImage("entities/mrsreed.png"), 220, 400, 40, 80, () => new Dialogue([
-				{ source: Entity.entities[2], dialogue: "Go to your room!" },
+				{ source: Entity.entities[2], dialogue: "Mrs. Reed: Go to your room!" },
 			])),
 			// John
 			new Entity(loadImage("entities/johnreed.png"), 380, 305, 40, 80, () => new Dialogue([
-				{ source: Entity.entities[3], dialogue: "You have no business to take our books;" },
-				{ source: Entity.entities[3], dialogue: "you are a dependent, mama says;" },
-				{ source: Entity.entities[3], dialogue: "you have no money; your father left you none;" },
-				{ source: Entity.entities[3], dialogue: "you ought to beg, and not to live here with gentlemen’s children like us, and ear the same meals we do, and wear clothes at our mama’s expense." },
+				{ source: Entity.entities[3], dialogue: "John Reed: You have no business to take our books;" },
+				{ source: Entity.entities[3], dialogue: "John Reed: you are a dependent, mama says;" },
+				{ source: Entity.entities[3], dialogue: "John Reed: you have no money; your father left you none;" },
+				{ source: Entity.entities[3], dialogue: "John Reed: you ought to beg, and not to live here with gentlemen’s children like us, and ear the same meals we do, and wear clothes at our mama’s expense." },
 			])),
 			// Helen
 			new Entity(loadImage("entities/helen.png"), 955, 240, 40, 80, () => new Dialogue([
-				{ source: Entity.entities[4], dialogue: "It is far better to endure patiently a smart which nobody feels but yourself, than to commit a hasty action whose evil consequences will extend to all connected with you;" },
-				{ source: Entity.entities[4], dialogue: "and besides, the Bible bids us return good for evil." },
+				{ source: Entity.entities[4], dialogue: "Helen: It is far better to endure patiently a smart which nobody feels but yourself, than to commit a hasty action whose evil consequences will extend to all connected with you;" },
+				{ source: Entity.entities[4], dialogue: "Helen: and besides, the Bible bids us return good for evil." },
 			])),
 			// Ms. Temple
 			new Entity(loadImage("entities/mstemple.png"), 830, 365, 40, 80, () => new Dialogue([
-				{ source: Entity.entities[5], dialogue: "You had this morning a breakfast which you could not eat; you must be hungry: – I have ordered that a lunch of bread and cheese shall be served to all." },
+				{ source: Entity.entities[5], dialogue: "Ms. Temple: You had this morning a breakfast which you could not eat; you must be hungry: – I have ordered that a lunch of bread and cheese shall be served to all." },
 			])),
 			// Mr. Brocklehurst
 			new Entity(loadImage("entities/brocklehurst.png"), 1060, 430, 40, 80, () => new Dialogue([
-				{ source: Entity.entities[6], dialogue: "My dear children," },
-				{ source: Entity.entities[6], dialogue: "this is a sad, a melancholy occasion; for it becomes my duty to warn you that this girl, who might be one of God’s own lambs, is a little castaway:" },
-				{ source: Entity.entities[6], dialogue: "not a member of the true flock, but evidently an interloper and an alien." },
-				{ source: Entity.entities[6], dialogue: "You must be on your guard against her; you must shun her example; if necessary, avoid her company, exclude her from your sports, and shut her from your converse." },
-				{ source: Entity.entities[6], dialogue: "Teachers, you must watch her; keep your eyes on her movements, weigh well her words, scrutinise her actions, punish her body to save the soul;" },
-				{ source: Entity.entities[6], dialogue: "if, indeed, such salvation be possible, for…this girl is – a liar!" },
+				{ source: Entity.entities[6], dialogue: "Mr. Brocklehurst: My dear children," },
+				{ source: Entity.entities[6], dialogue: "Mr. Brocklehurst: this is a sad, a melancholy occasion; for it becomes my duty to warn you that this girl, who might be one of God’s own lambs, is a little castaway:" },
+				{ source: Entity.entities[6], dialogue: "Mr. Brocklehurst: not a member of the true flock, but evidently an interloper and an alien." },
+				{ source: Entity.entities[6], dialogue: "Mr. Brocklehurst: You must be on your guard against her; you must shun her example; if necessary, avoid her company, exclude her from your sports, and shut her from your converse." },
+				{ source: Entity.entities[6], dialogue: "Mr. Brocklehurst: Teachers, you must watch her; keep your eyes on her movements, weigh well her words, scrutinise her actions, punish her body to save the soul;" },
+				{ source: Entity.entities[6], dialogue: "Mr. Brocklehurst: if, indeed, such salvation be possible, for…this girl is – a liar!" },
 			])),
 			// Rochester
 			new Entity(loadImage("entities/rochester.png"), 270, 910, 40, 80),
 			// Blanche
 			new Entity(loadImage("entities/blanche.png"), 450, 985, 40, 80, () => new Dialogue([
-				{ source: Entity.entities[8], dialogue: "Why, I suppose you have a governess for her: I saw a person with her just now – is she gone?" },
-				{ source: Entity.entities[8], dialogue: "Oh, no! there she is still behind the window-curtain." },
-				{ source: Entity.entities[8], dialogue: "You pay her, of course: I should think it quite as expensive, – more so; for you have them both to keep in addition…" },
-				{ source: Entity.entities[8], dialogue: "You should hear mama on the chapter of governesses: Mary and I have had, I should think, a dozen at least in our day;" },
-				{ source: Entity.entities[8], dialogue: "half of them detestable and the rest ridiculous, and all incubi – were they not, mama?" },
+				{ source: Entity.entities[8], dialogue: "Blanche Ingram: Why, I suppose you have a governess for her: I saw a person with her just now – is she gone?" },
+				{ source: Entity.entities[8], dialogue: "Blanche Ingram: Oh, no! there she is still behind the window-curtain." },
+				{ source: Entity.entities[8], dialogue: "Blanche Ingram: You pay her, of course: I should think it quite as expensive, – more so; for you have them both to keep in addition…" },
+				{ source: Entity.entities[8], dialogue: "Blanche Ingram: You should hear mama on the chapter of governesses: Mary and I have had, I should think, a dozen at least in our day;" },
+				{ source: Entity.entities[8], dialogue: "Blanche Ingram: half of them detestable and the rest ridiculous, and all incubi – were they not, mama?" },
 			])),
 			// Mr. Briggs
-			new Entity(loadImage("entities/briggs.png"), 755, 930, 40, 80),
+			new Entity(loadImage("entities/briggs.png"), 755, 930, 40, 80, () => new Dialogue([
+				{ source: Entity.entities[9], dialogue: "Mr. Briggs: STOP. this wedding at once. For you are already wedded to another woman!" },
+			])),
 			// Rochester
 			new Entity(loadImage("entities/rochester.png"), 310, 1695, 40, 80, () => new Dialogue([
-				{ source: Entity.entities[10], dialogue: "That is my wife," },
-				{ source: Entity.entities[10], dialogue: "Such is the sole conjugal embrace I am ever to know – such are the endearments which are to solace my leisure hours!" },
-				{ source: Entity.entities[10], dialogue: "And this is what I wished to have" },
-				{ source: Entity.entities[10], dialogue: "this young girl, who stands so grave and quiet at the mouth of hell, looking collectedly at the gambols of a demon." },
-				{ source: Entity.entities[10], dialogue: "I wanted her just as a change after that fierce ragout. Wood and Briggs, look at the difference! Compare these clear eyes with the red balls yonder – this face with that mask – this form with that bulk;" },
-				{ source: Entity.entities[10], dialogue: "then judge me, priest of the Gospel and man of the law, and remember, with what judgment ye judge ye shall be judged!" },
+				{ source: Entity.entities[10], dialogue: "Rochester: That is my wife," },
+				{ source: Entity.entities[10], dialogue: "Rochester: Such is the sole conjugal embrace I am ever to know – such are the endearments which are to solace my leisure hours!" },
+				{ source: Entity.entities[10], dialogue: "Rochester: And this is what I wished to have" },
+				{ source: Entity.entities[10], dialogue: "Rochester: this young girl, who stands so grave and quiet at the mouth of hell, looking collectedly at the gambols of a demon." },
+				{ source: Entity.entities[10], dialogue: "Rochester: I wanted her just as a change after that fierce ragout. Wood and Briggs, look at the difference! Compare these clear eyes with the red balls yonder – this face with that mask – this form with that bulk;" },
+				{ source: Entity.entities[10], dialogue: "Rochester: then judge me, priest of the Gospel and man of the law, and remember, with what judgment ye judge ye shall be judged!" },
 			])),
 			// St. John
 			new Entity(loadImage("entities/stjohn.png"), 985, 820, 40, 80, () => new Dialogue([
-				{ source: Entity.entities[11], dialogue: "God and nature intended you for a missionary’s wife." },
-				{ source: Entity.entities[11], dialogue: "It is not personal but mental endowments they have given you; you are formed for labor, not love." },
-				{ source: Entity.entities[11], dialogue: "A missionary’s wife you must—shall be." },
-				{ source: Entity.entities[11], dialogue: "You shall be mine; I claim you—not for my pleasure, but for my Sovereign’s service." },
+				{ source: Entity.entities[11], dialogue: "St. John: God and nature intended you for a missionary’s wife." },
+				{ source: Entity.entities[11], dialogue: "St. John: It is not personal but mental endowments they have given you; you are formed for labor, not love." },
+				{ source: Entity.entities[11], dialogue: "St. John: A missionary’s wife you must—shall be." },
+				{ source: Entity.entities[11], dialogue: "St. John: You shall be mine; I claim you—not for my pleasure, but for my Sovereign’s service." },
 			])),
 			// Mary
 			new Entity(loadImage("entities/mary.png"), 190, 1610, 40, 80),
@@ -202,8 +203,8 @@ class Entity {
 			new Entity(loadImage("entities/diana.png"), 240, 1610, 40, 80),
 			// Rochester
 			new Entity(loadImage("entities/rochester.png"), 880, 1675, 40, 80, () => new Dialogue([
-				{ source: Entity.entities[14], dialogue: "I know what it is to" },
-				{ source: Entity.entities[14], dialogue: "live entirely for and with what I love best on earth." },
+				{ source: Entity.entities[14], dialogue: "Rochester: I know what it is to" },
+				{ source: Entity.entities[14], dialogue: "Rochester: live entirely for and with what I love best on earth." },
 			])),
 		];
 	}
